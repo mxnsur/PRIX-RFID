@@ -26,7 +26,7 @@ const Welcome = ({ navigation }) => {
       
       <Pressable onPress={() => navigation.navigate('Newsletter')}>
       <Text style={styles.loseTag}>
-        Perda/Roubo de <Text style={{fontWeight: "bold"}}>Tag</Text> de Tag
+        Perda/Roubo de <Text style={{fontWeight: "bold"}}>Tag</Text>
       </Text>
       </Pressable>
       </ImageBackground>
