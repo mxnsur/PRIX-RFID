@@ -16,7 +16,7 @@ const Welcome = ({ navigation }) => {
       </Text>
 
 
-      <Pressable onPress={() => navigation.navigate('Cardápio')} style={styles.button}>
+      <Pressable onPress={() => navigation.navigate('FeedbackForm')} style={styles.button}>
       <Text style={styles.buttonText}>
         Ver meu Perfil
       </Text>
@@ -24,7 +24,7 @@ const Welcome = ({ navigation }) => {
       </Pressable>
 
       
-      <Pressable onPress={() => navigation.navigate('Newsletter')}>
+      <Pressable onPress={() => navigation.navigate('FeedbackForm')}>
       <Text style={styles.loseTag}>
         Perda/Roubo de <Text style={{fontWeight: "bold"}}>Tag</Text>
       </Text>
@@ -73,12 +73,12 @@ const styles = StyleSheet.create({
       //ios
       shadowOffset: {
         width: 0,
-        height: 8,
+        height: 4,
        },
        shadowOpacity: 0.4,
        shadowRadius: 8.0,
        //fim ios
-       elevation: 10,
+       elevation: 6,
        //android
        
   },
