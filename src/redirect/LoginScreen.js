@@ -28,7 +28,7 @@ export default function LoginScreen() {
         keyboardType={'default'}
         secureTextEntry={true}
       />
-
+      <Text style={styles.forgetText}>Esqueceu a senha?</Text>
       <TouchableOpacity 
       style={styles.button}
       independent={true}
@@ -36,16 +36,8 @@ export default function LoginScreen() {
       >
        <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-
-      <Text style={styles.ForgetText}>Esqueceu a senha?</Text>
-
-      <TouchableOpacity 
-      style={styles.button2}
-      independent={true}
-      onPress={ () => navigation.navigate('Navegador')}
-      >
-       <Text style={styles.buttonText2}>Criar nova conta</Text>
-      </TouchableOpacity>
+      <Text style={styles.signUp}>Ainda nao tem uma conta? <Text style={{fontWeight: "bold"}}>Cadastre-se</Text></Text>
+      <Image style={styles.logo2} source={require('../img/overflow.png')} />
       </ImageBackground>
     </ScrollView>
   );
@@ -55,25 +47,34 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+
   image: {
     flex: 1,
     justifyContent: 'center',
   },
 
   logo: {
-    height: 140,
+    height: 120,
     padding: 20,
     margin: 120,
     resizeMode: 'contain',
     alignSelf: 'center'
-    
- },
+  },
+
+  logo2: {
+     marginVertical: 100,
+     height: 140,
+     resizeMode: 'contain',
+     alignSelf: 'center'
+  },
+
   headerText: {
     padding: 40,
     fontSize: 30,
     color: '#EDEFEE',
     textAlign: 'center',
   },
+
   regularText: {
     fontSize: 24,
     padding: 20,
@@ -81,6 +82,7 @@ const styles = StyleSheet.create({
     color: '#EDEFEE',
     textAlign: 'center',
   },
+
   inputBox: {
     height: 50,
     margin: 10,
@@ -92,10 +94,11 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderCurve: 'circular',
   },
+
   button: {
     padding: 4,
     margin: 10,
-    marginVertical: 3,
+    marginVertical: 10,
     backgroundColor: '#171717',
     borderColor: '#171717',
     borderWidth: 3,
@@ -113,11 +116,13 @@ const styles = StyleSheet.create({
      elevation: 5,
      //android
   },
+
   buttonText: {
     color: 'white',
     textAlign: 'center',
     fontSize: 18,
   },
+
   regularText: {
     fontSize: 24,
     padding: 20,
@@ -125,6 +130,7 @@ const styles = StyleSheet.create({
     color: '#EDEFEE',
     textAlign: 'center',
   },
+
   title: {
     paddingVertical: 10,
     color: '#333333',
@@ -132,25 +138,20 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
-  ForgetText: {
-    textAlign: 'center',
-    fontSize: 15,
+
+  forgetText: {
+    textAlign: 'right',
+    marginRight: 20,
+    fontSize: 14,
     color: '#171717',
-    marginVertical: 4,
+    marginVertical: 1,
+    marginEnd: 20,
   },
-  button2: {
-    padding: 5.5,
-    margin: 10,
-    marginVertical: 140,
-    borderColor: '#171717',
-    borderWidth: 2,
-    borderRadius: 90,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-  buttonText2: {
-    color: '#171717',
-    textAlign: 'center',
-    fontSize: 18,
-  },
+
+  signUp: {
+      textAlign: 'center',
+      fontSize: 15,
+      color: '#171717',
+      marginVertical: 4,
+    },
 });
