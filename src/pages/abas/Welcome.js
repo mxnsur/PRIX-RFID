@@ -4,7 +4,7 @@ import { ImageBackground, View, Image, StyleSheet, Text, Pressable ,} from 'reac
 const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={require('../../img/background2.png')} resizeMode="stretch" style={styles.image2}>
+      <ImageBackground source={require('../../img/background-2.png')} resizeMode="stretch" style={styles.image2}>
       <Image style={styles.logo} source={require('../../img/prix.png')} />
 
       <Text style={styles.title}>
