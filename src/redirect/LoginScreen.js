@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ImageBackground, ScrollView, Image, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { ImageBackground, View, Image, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -9,7 +9,7 @@ export default function LoginScreen() {
   const [password, onChangePassword] = useState('');
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <ImageBackground source={require('../img/background.png')} resizeMode="cover" style={styles.image}>
      
       <Image style={styles.logo} source={require('../img/prix.png')} />
@@ -39,7 +39,7 @@ export default function LoginScreen() {
       <Text style={styles.signUp}>Ainda nao tem uma conta? <Text style={{fontWeight: "bold"}}>Cadastre-se</Text></Text>
       <Image style={styles.logo2} source={require('../img/overflow.png')} />
       </ImageBackground>
-    </ScrollView>
+    </View>
   );
 }
 
@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
   logo: {
     height: 120,
     padding: 20,
-    margin: 120,
+    marginTop: 220,
+    margin: 100,
     resizeMode: 'contain',
     alignSelf: 'center'
   },
@@ -101,7 +102,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     backgroundColor: '#171717',
     borderColor: '#171717',
-    borderWidth: 3,
+    borderWidth: 4,
     borderRadius: 90,
     flexDirection: 'row',
     justifyContent: 'center',
