@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Image, StyleSheet, Text, Pressable ,} from 'react-native';
+import { ImageBackground, View, Image, StyleSheet, Text, Pressable ,} from 'react-native';
 
 const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
+      <ImageBackground source={require('../../img/background-2.png')} resizeMode="stretch" style={styles.image2}>
       <Image style={styles.logo} source={require('../../img/prix.png')} />
 
       <Text style={styles.title}>
@@ -17,7 +18,7 @@ const Welcome = ({ navigation }) => {
 
       <Pressable onPress={() => navigation.navigate('Cardápio')} style={styles.button}>
       <Text style={styles.buttonText}>
-        Ver meu Perfil e Tags
+        Ver meu Perfil
       </Text>
 
       </Pressable>
@@ -25,16 +26,17 @@ const Welcome = ({ navigation }) => {
       
       <Pressable onPress={() => navigation.navigate('Newsletter')}>
       <Text style={styles.loseTag}>
-        Perda/Roubo de Tag
+        Perda/Roubo de <Text style={{fontWeight: "bold"}}>Tag</Text> de Tag
       </Text>
       </Pressable>
+      </ImageBackground>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   logo: {
-    marginVertical: 40,
+     marginTop: 0,
      height: 100,
      width: 245,
      resizeMode: 'contain',
@@ -49,8 +51,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 24,
-    backgroundColor: "#fafafa"
   },
   title: {
     paddingVertical: 10,
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
        
   },
   buttonText: {
-    fontSize: 16,
+    fontSize: 22,
     color: 'white',
   },
   regularText: {
@@ -93,24 +93,19 @@ const styles = StyleSheet.create({
     color: '#333333',
     textAlign: 'center',
   },
-  buttonNews: {
-    marginTop: 10,
-    padding: 5,
-    margin: 10,
-    marginVertical: 1,
-    backgroundColor: '#3e6a5d',
-    borderColor: '#3e6a5d',
-    borderWidth: 6,
-    borderRadius: 12,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
 
   loseTag: {
     textAlign: 'center',
-    fontSize: 15,
+    fontSize: 14,
     color: '#171717',
     marginVertical: 4,
+  },
+
+  image2: {
+    flex: 1,
+    width: 413,
+    height: 900,
+    justifyContent: 'center',
   },
 
 });
