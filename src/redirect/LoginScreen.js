@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, Image, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { ImageBackground, ScrollView, Image, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -10,6 +10,8 @@ export default function LoginScreen() {
 
   return (
     <ScrollView style={styles.container}>
+      <ImageBackground source={require('../img/background.png')} resizeMode="cover" style={styles.image}>
+     
       <Image style={styles.logo} source={require('../img/prix.png')} />
       <TextInput
         style={styles.inputBox}
@@ -32,8 +34,19 @@ export default function LoginScreen() {
       independent={true}
       onPress={ () => navigation.navigate('Navegador')}
       >
-       <Text style={styles.buttonText}>Log in</Text>
+       <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
+
+      <Text style={styles.ForgetText}>Esqueceu a senha?</Text>
+
+      <TouchableOpacity 
+      style={styles.button2}
+      independent={true}
+      onPress={ () => navigation.navigate('Navegador')}
+      >
+       <Text style={styles.buttonText2}>Criar nova conta</Text>
+      </TouchableOpacity>
+      </ImageBackground>
     </ScrollView>
   );
 }
@@ -41,12 +54,15 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fafafa"
   },
+  image: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+
   logo: {
-    height: 120,
-    width: 245,
-    padding: 30,
+    height: 140,
+    padding: 20,
     margin: 120,
     resizeMode: 'contain',
     alignSelf: 'center'
@@ -66,28 +82,41 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   inputBox: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
+    height: 50,
+    margin: 10,
+    borderWidth: 0.4,
     padding: 10,
     fontSize: 16,
-    borderColor: '#EDEFEE',
-    backgroundColor: '#EDEFEE',
+    borderColor: '#bfbdbd',
+    backgroundColor: '#fcfcfc',
+    borderRadius: 8,
+    borderCurve: 'circular',
   },
   button: {
-    fontSize: 22,
-    padding: 10,
-    marginVertical: 8,
-    margin: 100,
-    backgroundColor: '#EE9972',
-    borderColor: '#EE9972',
-    borderWidth: 2,
-    borderRadius: 50,
+    padding: 4,
+    margin: 10,
+    marginVertical: 3,
+    backgroundColor: '#171717',
+    borderColor: '#171717',
+    borderWidth: 3,
+    borderRadius: 90,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    //ios
+    shadowOffset: {
+      width: 0,
+      height: 8,
+     },
+     shadowOpacity: 0.4,
+     shadowRadius: 8.0,
+     //fim ios
+     elevation: 5,
+     //android
   },
   buttonText: {
-    color: 'black',
+    color: 'white',
     textAlign: 'center',
-    fontSize: 25,
+    fontSize: 18,
   },
   regularText: {
     fontSize: 24,
@@ -102,5 +131,26 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 30,
     fontWeight: 'bold',
+  },
+  ForgetText: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: '#171717',
+    marginVertical: 4,
+  },
+  button2: {
+    padding: 5.5,
+    margin: 10,
+    marginVertical: 140,
+    borderColor: '#171717',
+    borderWidth: 2,
+    borderRadius: 90,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  buttonText2: {
+    color: '#171717',
+    textAlign: 'center',
+    fontSize: 18,
   },
 });
