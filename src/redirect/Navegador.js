@@ -2,7 +2,11 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+<<<<<<< HEAD
 import Welcome from '../pages/abas/Welcome'
+=======
+import Welcome from '../pages/abas/welcome';
+>>>>>>> 67f00d8 (Configuração nav entre telas)
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
