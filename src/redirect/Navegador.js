@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Welcome from '../pages/abas/Welcome'
-import LoseTag from '../pages/abas/LoseTag';
+import SolicitarTag from '../pages/abas/SolicitarTag'
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +31,7 @@ export default function Navegador() {
       
       <Tab.Screen 
       name="Solicitar Tag" 
-      component={LoseTag} 
+      component={SolicitarTag} 
       options={{
           headerShown: false,
           tabBarLabelStyle: {

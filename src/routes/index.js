@@ -1,7 +1,7 @@
 import { createNativeStackNavigator} from '@react-navigation/native-stack'
 import LoginScreen from '../redirect/LoginScreen'
 import Navegador from '../redirect/Navegador';
-import LoseTag from '../../src/pages/abas/LoseTag'
+import SolicitarTag from '../pages/abas/SolicitarTag'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,9 +21,8 @@ export default function Routes(){
             />
             
             <Stack.Screen
-            name="LoseTag"
-            component={LoseTag}
-            options={{ headerShown: false }}
+            name="SolicitarTag"
+            component={SolicitarTag}
             />
         </Stack.Navigator>
     )

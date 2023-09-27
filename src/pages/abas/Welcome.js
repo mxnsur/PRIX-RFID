@@ -16,7 +16,7 @@ const Welcome = ({ navigation }) => {
       </Text>
 
 
-      <Pressable onPress={() => navigation.navigate('FeedbackForm')} style={styles.button}>
+      <Pressable onPress={() => navigation.navigate('SolicitarTag')} style={styles.button}>
       <Text style={styles.buttonText}>
         Ver meu Perfil
       </Text>
@@ -24,7 +24,7 @@ const Welcome = ({ navigation }) => {
       </Pressable>
 
       
-      <Pressable onPress={() => navigation.navigate('FeedbackForm')}>
+      <Pressable onPress={() => navigation.navigate('SolicitarTag')}>
       <Text style={styles.loseTag}>
         Perda/Roubo de <Text style={{fontWeight: "bold"}}>Tag</Text>
       </Text>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, KeyboardAvoidingView, Platform, Image, Alert } from 'react-native';
 import Button from "../componentes/Button";
 
-const LoseTag = () => { 
+const SolicitarTag = () => { 
     const [firstName, onChangeFirstName] = useState(''); 
     const [email, onChangeEmail] = useState(''); 
     const [phoneNumber, onChangePhoneNumber] = useState(''); 
@@ -144,4 +144,4 @@ return (
           }, 
      }); 
             
-export default LoseTag;
+export default SolicitarTag;
