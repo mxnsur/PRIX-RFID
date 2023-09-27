@@ -1,10 +1,11 @@
 import React from 'react';
 import { ImageBackground, View, Image, StyleSheet, Text, Pressable ,} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Welcome = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <ImageBackground source={require('../../img/background-2.png')} resizeMode="stretch" style={styles.image2}>
+    <SafeAreaView style={styles.container}>
+      <ImageBackground source={require('../../img/background.png')} resizeMode="stretch" style={styles.image2}>
       <Image style={styles.logo} source={require('../../img/prix.png')} />
 
       <Text style={styles.title}>
@@ -30,7 +31,7 @@ const Welcome = ({ navigation }) => {
       </Text>
       </Pressable>
       </ImageBackground>
-    </View>
+    </SafeAreaView>
   );
 };
 

@@ -2,6 +2,7 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack'
 import LoginScreen from '../redirect/LoginScreen'
 import Navegador from '../redirect/Navegador';
 import SolicitarTag from '../pages/abas/SolicitarTag'
+import Feedback from '../pages/abas/Feedback';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,11 @@ export default function Routes(){
             <Stack.Screen
             name="SolicitarTag"
             component={SolicitarTag}
+            />
+            
+            <Stack.Screen
+            name="Feedback"
+            component={Feedback}
             />
         </Stack.Navigator>
     )
