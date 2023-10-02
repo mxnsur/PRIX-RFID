@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const Welcome = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={require('../../img/background.png')} resizeMode="stretch" style={styles.image2}>
+      <ImageBackground source={require('../../img/background-2.png')} resizeMode="stretch" style={styles.image2}>
       <Image style={styles.logo} source={require('../../img/prix.png')} />
 
       <Text style={styles.title}>
