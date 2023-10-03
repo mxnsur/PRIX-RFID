@@ -23,7 +23,7 @@ const Perfil = () => {
       />
       
       <TouchableOpacity onPress={toggleExpand} style={styles.button} >
-       <Text style={styles.buttonText}>Ver sua UID</Text>
+       <Text style={styles.buttonText}>Ver a minha UID</Text>
       </TouchableOpacity>
       <Collapsible collapsed={collapsed}>
         <Text style={styles.headingSection}>UID da TAG: ED 78 03 CA</Text>
