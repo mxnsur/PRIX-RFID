@@ -8,7 +8,7 @@ const Welcome = ({ navigation }) => {
       <Image style={styles.logo} source={require('../../img/prix.png')} />
 
       <Text style={styles.title}>
-        Bem-vindo(a) ao PRIX-RFID
+        Bem-vindo(a)
       </Text>
 
       <Text style={styles.regularText}>
