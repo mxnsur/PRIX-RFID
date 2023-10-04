@@ -1,6 +1,5 @@
 import React from 'react';
-import { ImageBackground, View, Image, StyleSheet, Text, Pressable ,} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { ImageBackground, SafeAreaView, Image, StyleSheet, Text, Pressable ,} from 'react-native';
 
 const Welcome = ({ navigation }) => {
   return (
