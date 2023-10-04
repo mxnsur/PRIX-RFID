@@ -90,7 +90,7 @@ return (
         }, 
 
         logo: {
-          marginTop: 40,
+          marginTop: 80,
           height: 80,
           width: 300,
           resizeMode: "contain",

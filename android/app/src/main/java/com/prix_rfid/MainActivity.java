@@ -1,4 +1,4 @@
-package com.littlelemonapk;
+package com.prix_rfid;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "prix-rfid";
+    return "Prix_RFID";
   }
 
   /**

@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
 
   image2: {
     flex: 1,
-    width: 413,
+    width: 430,
     height: 900,
     justifyContent: 'center',
   },
