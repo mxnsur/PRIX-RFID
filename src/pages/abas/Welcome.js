@@ -16,7 +16,7 @@ const Welcome = ({ navigation }) => {
       </Text>
 
 
-      <Pressable onPress={() => navigation.navigate('SolicitarTag')} style={styles.button}>
+      <Pressable onPress={() => navigation.navigate('Perfil')} style={styles.button}>
       <Text style={styles.buttonText}>
         Ver meu Perfil
       </Text>
