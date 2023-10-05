@@ -6,7 +6,6 @@ const SolicitarTag = () => {
     const [firstName, onChangeFirstName] = useState(''); 
     const [email, onChangeEmail] = useState(''); 
     const [phoneNumber, onChangePhoneNumber] = useState(''); 
-    const [tipeCar, onChangeTipeCar] = useState(''); 
     const [carLicense, onChangeCarLicense] = useState(''); 
     const [message, onChangeMessage] = useState(''); 
 
@@ -46,14 +45,6 @@ return (
         onChangeText={onChangePhoneNumber} 
         placeholder={'Celular'} 
         keyboardType={"phone-pad"}
-        clearButtonMode={'always'}
-        /> 
-        <TextInput 
-        style={styles.input} 
-        value={tipeCar} 
-        onChangeText={onChangeTipeCar} 
-        placeholder={'Tipo do Carro'} 
-        keyboardType={"default"}
         clearButtonMode={'always'}
         /> 
         <TextInput 
